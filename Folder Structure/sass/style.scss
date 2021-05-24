@@ -1,0 +1,38 @@
+/* *******
+
+  HERE WE'RE GONNA INCLUDE ALL
+  FILES PRESENT IN OUR STYLESHEET
+
+  Base:   
+    It consists of all the basic rules
+    of css, like font-size, box-sizing, etc..
+  Variables:
+    It consists of every data that we're
+    gonna use in this project,
+    like: font-sizes, colors, numbers etc.
+  Layout:
+    It consists of the base layout of page,
+    all sections should be styled there
+  Components:
+    Any component that is reusable, or to which
+    we give a specific block in BEM will be in that
+    file. This file will consists of all the 
+    components like navigation, caraousel etc.
+  Pages:
+    It includes all the page specific code
+
+  NOTE:
+    1. We will use generic breakpoints for our project
+    not fixed, anywhere in design if it breaks then
+    use media query and please * use em unit *
+
+    2. Make sure to follow these guidelines
+    3. Don't remove this comment
+
+******** */
+
+@import 'base';
+@import 'variables';
+@import 'layout';
+@import 'components';
+@import 'pages';

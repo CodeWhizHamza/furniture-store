@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%; // 1rem = 10px
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 50%; // 1rem = 9px
+  }
+}
+
+body {
+  font-size: $font-text;
+  line-height: 1.6;
+  background-color: $color-grey-light-1;
+}
