@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 1rem;
   }
   &__text-left {
     height: 6rem;
@@ -63,6 +64,118 @@
     &:hover {
       background-color: $color-primary-dark;
       border-color: $color-primary-dark;
+    }
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    margin: 5rem 0;
+
+    &__text-left {
+      font-size: 2.2rem;
+    }
+    &__icon {
+      width: 6rem;
+    }
+    &__text-right {
+      font-size: 1.4rem;
+    }
+
+    &__form {
+      flex: 0 0 36%;
+    }
+    &__inputBox {
+      padding: 1rem 1.6rem;
+    }
+    &__btn {
+      padding: 1rem 1.6rem;
+    }
+  }
+  @media only screen and (max-width: 56.25em) {
+    font-family: $font-sans;
+    background-color: $color-secondary;
+    color: #fff;
+    margin: 6rem 0;
+
+    &__text {
+      margin: 0;
+      margin-bottom: 3rem;
+    }
+    &__icon {
+      width: 5rem;
+    }
+    &__text-right {
+      margin-left: 1.5rem;
+    }
+
+    &__form {
+      flex: 0 0 100%;
+    }
+    &__inputBox {
+      padding: 1.2rem 2rem;
+    }
+    &__btn {
+      padding: 1rem 4rem;
+    }
+  }
+  @media only screen and (max-width: 37.5em) {
+    &__text {
+      flex-direction: column;
+      flex: 1;
+    }
+    &__text-left {
+      width: 100%;
+      padding: 0;
+      flex-direction: column;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+    &__icon {
+      margin: 0;
+      width: 7.5rem;
+    }
+    &__text-right {
+      margin: 0;
+    }
+
+    &__form {
+      flex: 0 0 100%;
+    }
+    &__inputBox {
+      flex: 1;
+      padding: 1.2rem 2rem;
+      border: 2px solid $color-primary;
+      border-radius: 0.8rem 0 0 0.8rem;
+      outline: none;
+      transition: box-shadow 0.3s ease, background 0.3s ease;
+      font-size: inherit;
+
+      &::placeholder {
+        color: rgba(#29261e, 0.5);
+      }
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 2rem rgba(#fff, 0.5);
+        background-color: #eee;
+      }
+    }
+    &__btn {
+      font-size: inherit;
+      padding: 1rem 4rem;
+      border: 2px solid $color-primary;
+      background-color: $color-primary;
+      border-radius: 0 0.8rem 0.8rem 0;
+      cursor: pointer;
+      color: $color-grey-dark-1;
+      transition: border 0.3s ease, background 0.3s ease;
+      outline: none;
+
+      &:focus,
+      &:hover {
+        background-color: $color-primary-dark;
+        border-color: $color-primary-dark;
+      }
     }
   }
 }
@@ -161,5 +274,27 @@
   &__copyright {
     margin-top: 10rem;
     color: $color-grey-light-3;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    &__right &__title::after {
+      right: unset;
+      left: 0;
+    }
+
+    &__center {
+      order: -1;
+      align-self: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    &__center {
+      width: auto;
+    }
   }
 }

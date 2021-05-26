@@ -4,6 +4,13 @@
   align-items: center;
   align-content: center;
   padding: 7rem 12rem;
+
+  @media only screen and (max-width: 56.25em) {
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 37.5em) {
+    padding: 4rem 6rem;
+  }
 }
 
 .footer {
@@ -17,5 +24,15 @@
   }
   &__right {
     text-align: right;
+  }
+  @media only screen and (max-width: 56.25em) {
+    padding: 2rem 4rem 4rem 4rem;
+    &__right {
+      text-align: left;
+    }
+    &__left,
+    &__right {
+      padding-top: 3rem;
+    }
   }
 }
