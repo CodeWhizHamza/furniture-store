@@ -1,0 +1,21 @@
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 7rem 12rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 10rem 10rem 10rem;
+
+  &__left,
+  &__right {
+    padding-top: 23rem;
+  }
+  &__right {
+    text-align: right;
+  }
+}
