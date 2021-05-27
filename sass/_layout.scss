@@ -1,3 +1,35 @@
+header {
+  height: 100vh;
+  margin-bottom: 3rem;
+}
+.general {
+  max-width: 100%;
+  .container {
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    height: 150px;
+    padding: 1rem;
+
+    header__logo {
+      width: 200.267px;
+      height: 130px;
+    }
+  }
+}
+.corousel {
+  // max-width: 100%;
+  border: 2px solid green;
+  margin-bottom: 3rem;
+  background-image: url(../images/home\ background-1.png);
+  // img {
+  //   border: 2px solid green;
+  //   ba
+  // }
+}
 .newsletter {
   display: flex;
   justify-content: space-between;

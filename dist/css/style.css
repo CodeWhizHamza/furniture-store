@@ -57,7 +57,40 @@ body {
   background-color: #fff;
 }
 
+header {
+  height: 100vh;
+  margin-bottom: 3rem;
+}
+
+.general {
+  max-width: 100%;
+}
+.general .container {
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+  height: 150px;
+  padding: 1rem;
+}
+.general .container header__logo {
+  width: 200.267px;
+  height: 130px;
+}
+
+.corousel {
+  max-width: 100%;
+  border: 2px solid green;
+  margin-bottom: 3rem;
+}
+.corousel img {
+  border: 2px solid green;
+}
+
 .newsletter {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -95,6 +128,28 @@ body {
   .footer__left, .footer__right {
     padding-top: 3rem;
   }
+}
+
+.general img {
+  height: 30px;
+  margin-left: 1em;
+}
+.general form {
+  flex: 0 0 42%;
+  display: flex;
+}
+
+nav {
+  background-color: black;
+  text-align: center;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem 2.5em;
+  font-size: 2rem;
+  font-family: "Righteous", cursive;
 }
 
 .newsletter {

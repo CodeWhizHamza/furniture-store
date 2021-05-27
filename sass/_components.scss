@@ -1,3 +1,26 @@
+.general {
+  img {
+    height: 30px;
+    margin-left: 1em;
+  }
+  form {
+    flex: 0 0 42%;
+    display: flex;
+  }
+}
+nav {
+  background-color: black;
+  text-align: center;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 2.5em;
+    font-size: 2rem;
+    font-family: $font-display;
+  }
+}
+
 .newsletter {
   font-family: $font-sans;
   background-color: $color-secondary;
@@ -211,7 +234,7 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       width: 6rem;
       height: 4px;
