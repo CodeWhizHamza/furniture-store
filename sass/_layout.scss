@@ -1,0 +1,27 @@
+.products {
+  font-family: $font-sans;
+  padding: 10rem 5rem;
+  border-top: 1px solid $color-grey-light-1;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__featuring {
+    margin-top: 1.5rem;
+  }
+  &__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > *:nth-child(1) {
+      flex: 0 0 33.3333333%;
+    }
+    & > *:nth-child(2) {
+      flex: 0 0 66.6666666%;
+    }
+  }
+}
