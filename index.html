@@ -12,48 +12,119 @@
     />
 
     <title>Furniture store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="/js/app.js"></script>
   </head>
   <body>
+    <!-- 
+      Sections: header, home
+      Developer: Ronit
+     -->
+
+    <header class="header">
+      <svg class="header__logo item1">
+        <use xlink:href="/images/icons.svg#icon-logo-large"></use>
+      </svg>
+      <form action="" class="form item2">
+        <input type="text" class="form__inputBox" placeholder="Search here" />
+        <button class="form__btn">Search</button>
+      </form>
+
+      <ul class="header__list item3">
+        <li class="header__item">
+          <a href="#" class="header__link">
+            <svg class="header__link-image">
+              <use xlink:href="/images/icons.svg#icon-heart"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">
+            <svg class="header__link-image">
+              <use xlink:href="/images/icons.svg#icon-cart"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">
+            <svg class="header__link-image">
+              <use xlink:href="/images/icons.svg#icon-user"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <nav class="nav">
+      <a class="nav__link" href="#">Home</a>
+      <a class="nav__link" href="#">About Us</a>
+      <a class="nav__link" href="#">Contact Us</a>
+      <a class="nav__link" href="#">FAQs</a>
+      <a class="nav__link" href="#">Shipping Policy</a>
+    </nav>
+
+    <section class="home">
+      <figure class="home__images">
+        <img
+          src="/images/home-background-1.png"
+          alt="Home images"
+          class="home__image"
+        />
+        <img
+          src="/images/home-background-2.png"
+          alt="Home images"
+          class="home__image"
+        />
+      </figure>
+      <div class="home__content">
+        <h1 class="home__title">Style Reflection</h1>
+        <h3 class="home__sub-title">Don't Let Just Anyone Into Your Home</h3>
+        <button class="btn btn--solid">Start Now!</button>
+      </div>
+    </section>
+
     <!-- 
       Sections: features, top categories
       Developer: Sundar Kumar
      -->
 
     <section class="features-section">
-      <h2 class="section-heading">
+      <h2 class="section-heading" data-aos="flip-up">
         <div class="section-heading__content">Features</div>
       </h2>
 
       <div class="features">
-        <article class="feature">
+        <article class="feature" data-aos="fade-right">
           <div class="feature__content">
             <h3 class="feature__title">Free Delivery</h3>
             <p class="feature__text">Order over $100</p>
           </div>
-          <img class="feature__image" src="/images/turck.svg" alt="Turck" />
+          <svg class="feature__image" alt="Truck">
+            <use xlink:href="/images/icons.svg#icon-truck"></use>
+          </svg>
         </article>
-        <article class="feature">
-          <img class="feature__image" src="/images/dollar.svg" alt="vector" />
+        <article class="feature" data-aos="fade-left">
+          <svg class="feature__image" alt="dollar">
+            <use xlink:href="/images/icons.svg#icon-dollar"></use>
+          </svg>
           <div class="feature__content">
             <h3 class="feature__title">Money Back Guarantee</h3>
             <p class="feature__text">with a 30 day</p>
           </div>
         </article>
-        <article class="feature">
+        <article class="feature" data-aos="fade-right">
           <div class="feature__content">
             <h3 class="feature__title">East & Free Returns</h3>
             <p class="feature__text">Hours: 8AM -11PM</p>
           </div>
-          <img class="feature__image" src="/images/mail.svg" alt="Mail" />
+          <img class="feature__image" alt="mail" src="/images/mail.svg" />
         </article>
-        <article class="feature">
-          <img
-            class="feature__image"
-            src="/images/headphone.svg"
-            alt="Headphone"
-          />
+        <article class="feature" data-aos="fade-left">
+          <svg class="feature__image" alt="Headphone">
+            <use xlink:href="/images/icons.svg#icon-headphone"></use>
+          </svg>
           <div class="feature__content">
             <h3 class="feature__title">Best Online Support</h3>
             <p class="feature__text">Hours: 8AM -11PM</p>
@@ -63,13 +134,13 @@
     </section>
 
     <section class="categories">
-      <h2 class="section-heading">
+      <h2 class="section-heading" data-aos="flip-up">
         <div class="section-heading__content">Top Categories</div>
       </h2>
       <div class="categories__carousal">
-        <article class="top-product">
+        <article class="top-product" data-aos="zoom-in-down">
           <img
-            src="/images/prod-1.jpg"
+            src="/images/product-1.jpg"
             alt="An arm Chair"
             class="top-product__image"
           />
@@ -80,9 +151,9 @@
             <li class="top-product__item">Futon</li>
           </ul>
         </article>
-        <article class="top-product">
+        <article class="top-product" data-aos="zoom-in-down">
           <img
-            src="/images/prod-2.jpg"
+            src="/images/product-2.jpg"
             alt="An arm Chair"
             class="top-product__image"
           />
@@ -93,9 +164,9 @@
             <li class="top-product__item">Entertainment center</li>
           </ul>
         </article>
-        <article class="top-product">
+        <article class="top-product" data-aos="zoom-in-down">
           <img
-            src="/images/prod-3.jpg"
+            src="/images/product-3.jpg"
             alt="An arm Chair"
             class="top-product__image"
           />
@@ -106,9 +177,9 @@
             <li class="top-product__item">Love seat</li>
           </ul>
         </article>
-        <article class="top-product">
+        <article class="top-product" data-aos="zoom-in-down">
           <img
-            src="/images/prod-4.jpg"
+            src="/images/product-4.jpg"
             alt="An arm Chair"
             class="top-product__image"
           />
@@ -122,14 +193,14 @@
       </div>
 
       <div class="categories__brands">
-        <article class="brand">
+        <article class="brand" data-aos="fade-right">
           <div class="brand__content">
             <h2 class="brand__title">Mix &amp; Match</h2>
             <p class="brand__text">Your style</p>
             <button class="btn btn--solid">Shop Now</button>
           </div>
         </article>
-        <article class="brand">
+        <article class="brand" data-aos="fade-left">
           <div class="brand__content">
             <h2 class="brand__title">Stylish</h2>
             <p class="brand__text">In living place</p>
@@ -145,12 +216,12 @@
      -->
 
     <section class="products">
-      <h2 class="section-heading">
+      <h2 class="section-heading" data-aos="flip-up">
         <div class="section-heading__content">Our Products</div>
       </h2>
 
       <div class="products__content">
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-1.jpg"
             alt="A wooden furniture"
@@ -166,7 +237,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-2.jpg"
             alt="A wooden furniture"
@@ -182,7 +253,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-3.jpg"
             alt="A wooden furniture"
@@ -198,7 +269,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-4.jpg"
             alt="A wooden furniture"
@@ -214,7 +285,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-1.jpg"
             alt="A wooden furniture"
@@ -230,7 +301,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-2.jpg"
             alt="A wooden furniture"
@@ -246,7 +317,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-3.jpg"
             alt="A wooden furniture"
@@ -262,7 +333,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-4.jpg"
             alt="A wooden furniture"
@@ -278,7 +349,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-1.jpg"
             alt="A wooden furniture"
@@ -294,7 +365,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-2.jpg"
             alt="A wooden furniture"
@@ -310,7 +381,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-3.jpg"
             alt="A wooden furniture"
@@ -326,7 +397,7 @@
           <p class="product__name">Name</p>
           <h3 class="product__heading">Price</h3>
         </article>
-        <article class="product">
+        <article class="product" data-aos="fade-up">
           <img
             src="/images/product-4.jpg"
             alt="A wooden furniture"
@@ -345,20 +416,20 @@
       </div>
 
       <div class="products__featuring">
-        <article class="feature feature--1 feature--large">
+        <article class="feature feature--1 feature--large" data-aos="fade-down">
           <div class="feature__content">
             <h3 class="feature__heading">Decor Your Dreams</h3>
             <button class="btn btn--solid">Shop Now</button>
           </div>
         </article>
         <div class="products__center">
-          <article class="feature feature--2 feature--small">
+          <article class="feature feature--2 feature--small" data-aos="fade-right">
             <div class="feature__content">
               <p class="feature__text">Let good into your home</p>
               <h3 class="feature__heading feature__heading--small">Comports</h3>
             </div>
           </article>
-          <article class="feature feature--3 feature--medium">
+          <article class="feature feature--3 feature--medium" data-aos="fade-left>
             <div class="feature__content">
               <h3 class="feature__heading feature__heading--normal">
                 American
@@ -368,7 +439,7 @@
             </div>
           </article>
         </div>
-        <article class="feature feature--4 feature--large">
+        <article class="feature feature--4 feature--large" data-aos="fade-up">
           <div class="feature__content">
             <h3 class="feature__heading">Executive &amp; Classic</h3>
             <p class="feature__text">Art with an attitude</p>
@@ -383,7 +454,7 @@
      -->
 
     <section class="newsletter">
-      <div class="newsletter__text">
+      <div class="newsletter__text" data-aos="fade-right">
         <div class="newsletter__text-left">
           <svg class="newsletter__icon">
             <use xlink:href="/images/icons.svg#icon-mail"></use>
@@ -392,17 +463,13 @@
         </div>
         <div class="newsletter__text-right">Get 25% off for first Purchase</div>
       </div>
-      <form action="" class="newsletter__form">
-        <input
-          type="text"
-          class="newsletter__inputBox"
-          placeholder="abc@gmail.com"
-        />
-        <button class="newsletter__btn">Join</button>
+      <form action="" class="form" data-aos="fade-left">
+        <input type="text" class="form__inputBox" placeholder="abc@gmail.com" />
+        <button class="form__btn">Join</button>
       </form>
     </section>
     <footer class="footer">
-      <div class="footer__left">
+      <div class="footer__left" data-aos="fade-right" data-aos-duration='2000'>
         <h4 class="footer__title">Information</h4>
         <ul class="footer__links">
           <li class="footer__item">
@@ -422,7 +489,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__center">
+      <div class="footer__center" data-aos="fade-up">
         <svg class="footer__logo">
           <use xlink:href="/images/icons.svg#icon-logo-large"></use>
         </svg>
@@ -472,7 +539,7 @@
           All rights reserved to Woodie Furniture &copy; 2021
         </div>
       </div>
-      <div class="footer__right">
+      <div class="footer__right" data-aos="fade-left" data-aos-duration='2000'>
         <h4 class="footer__title">Contact Us</h4>
         <ul class="footer__links">
           <li class="footer__item">

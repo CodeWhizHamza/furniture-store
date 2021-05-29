@@ -1,3 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 10rem;
+
+  &__logo {
+    width: 14rem;
+    height: auto;
+  }
+
+  &__list {
+    height: auto;
+    list-style: none;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+  &__item {
+    margin: 0 0.5rem;
+  }
+  &__link {
+    align-self: center;
+  }
+  &__link-image {
+    display: inline-block;
+    width: 5rem;
+  }
+  .form {
+    flex: 0 0 40%;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 0 2rem;
+
+    &__link-image {
+      width: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    flex-flow: wrap;
+    margin-bottom: 2.5rem;
+
+    .form {
+      flex: 0 0 75%;
+      order: 1;
+      margin: 0 auto;
+    }
+  }
+}
+
 .features-section {
   margin: 10rem 0;
 }
