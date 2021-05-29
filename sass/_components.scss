@@ -1,21 +1,28 @@
 .general {
   img {
     height: 30px;
-    margin-left: 1em;
+    margin-right: 1em;
   }
   form {
     flex: 0 0 42%;
     display: flex;
   }
+  @media (max-width: 300px) {
+    img {
+      height: 20px;
+    }
+  }
 }
 nav {
+  height: 8vh;
   background-color: black;
   text-align: center;
+  margin-bottom: 3vh;
   a {
     display: inline-block;
     text-decoration: none;
     color: white;
-    padding: 1.5rem 2.5em;
+    padding: 1.3rem 1em;
     font-size: 2rem;
     font-family: $font-display;
   }

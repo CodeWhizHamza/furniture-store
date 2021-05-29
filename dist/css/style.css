@@ -58,12 +58,12 @@ body {
 }
 
 header {
-  height: 100vh;
-  margin-bottom: 3rem;
+  height: 99vh;
 }
 
 .general {
   max-width: 100%;
+  height: 15vh;
 }
 .general .container {
   display: flex;
@@ -72,21 +72,87 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 1250px;
-  height: 150px;
   padding: 1rem;
+  flex-flow: wrap;
 }
-.general .container header__logo {
-  width: 200.267px;
-  height: 130px;
+@media (max-width: 624px) {
+  .general {
+    height: 22vh;
+  }
+  .general .item1 {
+    order: 1;
+  }
+  .general .item3 {
+    order: 2;
+  }
+  .general .item2 {
+    order: 3;
+    margin: 1em 1em;
+    flex-grow: 1;
+  }
 }
 
 .corousel {
-  max-width: 100%;
-  border: 2px solid green;
   margin-bottom: 3rem;
+  height: 74vh;
+  position: relative;
+}
+.corousel__text {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  font-family: "Righteous", cursive;
+}
+.corousel__text h1 {
+  font-size: 4.8rem;
+}
+.corousel__text h2 {
+  font-size: 2.4rem;
+}
+.corousel__text a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.8em 2em;
+  background-color: #f2cf87;
+  transition: all 0.3s ease-in-out;
+}
+.corousel__text a:hover {
+  background-color: #edbe5e;
 }
 .corousel img {
-  border: 2px solid green;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 625px) {
+  .corousel .corousel__text {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    padding: 2em;
+    transform: translate(5%, 5%);
+    background-color: rgba(255, 255, 255, 0.801);
+    text-align: center;
+    margin: 0 auto;
+  }
+  .corousel .corousel__text h1 {
+    font-weight: 500;
+  }
+  .corousel .corousel__text h2 {
+    font-weight: 200;
+  }
+}
+@media (max-width: 434px) {
+  .corousel h1 {
+    font-size: 3rem;
+  }
+  .corousel h2 {
+    font-size: 2rem;
+  }
 }
 
 .newsletter {
@@ -132,22 +198,29 @@ header {
 
 .general img {
   height: 30px;
-  margin-left: 1em;
+  margin-right: 1em;
 }
 .general form {
   flex: 0 0 42%;
   display: flex;
 }
+@media (max-width: 300px) {
+  .general img {
+    height: 20px;
+  }
+}
 
 nav {
+  height: 8vh;
   background-color: black;
   text-align: center;
+  margin-bottom: 3vh;
 }
 nav a {
   display: inline-block;
   text-decoration: none;
   color: white;
-  padding: 1.5rem 2.5em;
+  padding: 1.3rem 1em;
   font-size: 2rem;
   font-family: "Righteous", cursive;
 }
