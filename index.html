@@ -10,12 +10,54 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap"
       rel="stylesheet"
     />
-
     <title>Furniture store</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
     <script defer src="/js/app.js"></script>
   </head>
+
   <body>
+    <header>
+      <div class="general">
+        <div class="container">
+          <svg class="header__logo item1" style="width: 150px; height: 90px">
+            <use xlink:href="/images/icons.svg#icon-logo-large"></use>
+          </svg>
+          <form action="" class="header__form item2">
+            <input
+              type="text"
+              class="newsletter__inputBox"
+              placeholder="abc@gmail.com"
+            />
+            <button class="newsletter__btn">Join</button>
+          </form>
+
+          <div class="header__icons item3">
+            <img src="./images/heart.svg" alt="" />
+            <img src="./images/shopping-cart.svg" alt="" />
+            <img src="./images/user.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <nav>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+        <a href="">FAQs</a>
+        <a href="">Shipping Policy</a>
+      </nav>
+      <div class="corousel">
+        <div class="corousel__text">
+          <h1>Style Reflection</h1>
+          <div class="corousel__para">
+            <h2>Don't Let Just Anyone</h2>
+            <h2>Into Your Home</h2>
+            <a href="">Shop Now</a>
+          </div>
+        </div>
+        <img src="./images/home background-1.png" alt="" />
+      </div>
+    </header>
+
     <section class="newsletter">
       <div class="newsletter__text">
         <div class="newsletter__text-left">
@@ -32,7 +74,7 @@
           class="newsletter__inputBox"
           placeholder="abc@gmail.com"
         />
-        <button class="newsletter__btn">Join</button>
+        <button class="newsletter__btn" type="submit">Join</button>
       </form>
     </section>
     <footer class="footer">
